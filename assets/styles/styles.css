@@ -1,0 +1,143 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: 1px solid blue; */
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#container {
+  width: inherit;
+  height: 100vh;
+  display: flex;
+  background: linear-gradient(rgba(0 0 0 / 50%), #96886214),
+    url("../images/railway.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.text {
+  position: absolute;
+  font-family: Satisfy, cursive, sans-serif;
+  top: 25vh;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 20px;
+}
+
+.timecontainer {
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 45vh;
+  column-gap: 5vw;
+  color: aliceblue;
+  flex-wrap: wrap;
+}
+
+.title {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 3rem;
+  color: antiquewhite;
+}
+
+.simple-text {
+  font-size: 18px;
+  color: antiquewhite;
+}
+
+.display {
+  color: aliceblue;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 11vh;
+}
+
+.timetxt {
+  font-size: 2rem;
+}
+
+.manager {
+  display: flex;
+  position: absolute;
+  top: 80vh;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  column-gap: 30px;
+  flex-wrap: wrap;
+}
+
+.btn-manager {
+   background-color: rgba(122, 95, 8, 0.596);
+  color: rgb(229, 231, 233);
+  font-size: 2rem;
+  width: 15vw;
+  height: 8vh;
+  border-radius: 20px;
+  cursor: pointer;
+  border-color: wheat transparent;
+}
+
+.my-title {
+  color: rgb(3, 184, 33);
+  font-size: 5rem;
+  font-family: Satisfy, cursive, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+width: 100vw;
+top: 7vh;
+}
+
+@media screen and (max-width: 450px) {
+  .manager {
+    top: 84vh;
+  }
+
+   .text {
+    top: 18vh;
+  }
+
+  .btn-manager {
+    width: auto
+  }
+
+  .display {
+    font-size:12vh;
+  }
+}
+
+@media screen and (max-width: 356px) {
+  .manager {
+    top: 90vh;
+  }
+
+  .display {
+    font-size:9vh;
+  }
+
+  .text {
+    top: 20vh;
+  }
+
+  .btn-manager {
+    width: auto
+  }
+}

@@ -66,9 +66,9 @@ function startFunction() {
     days.textContent = daysValue < 10 ? `0${daysValue}` : daysValue;
 
     if (daysValue === 31) {
-      clearInterval(setIntervaId);
+       days.textContent = "0" + 1;
     }
-  }, 1);
+  }, 100);
 }
 
 //function to stop the timer
@@ -92,3 +92,4 @@ displayDate.style.display = 'block';
 displayDate.style.color = 'white';
 displayDate.style.fontFamily = 'satisfy';
 displayDate.style.fontSize = '20px';
+
